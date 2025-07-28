@@ -1,37 +1,75 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+
+<!-- 
+    🔧 Le travail est bien lancé, bravo pour l'effort ! 💪
+Il reste quelques erreurs à corriger dans le code HTML (liens, majuscules, accents, attributs).
+Prends le temps de bien relire et d’appliquer les corrections proposées en commentaires.
+
+🎯 Objectif : améliorer la qualité du code et apprendre à structurer une page proprement.
+Tu es sur la bonne voie, continue comme ça ! 🚀
+
+✅ Une fois corrigé, n’oublie pas de faire un nouveau commit avec un message clair :
+"Corrections HTML effectuées - Merci 🙌"
+-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document</title> <!-- ❌ Titre trop générique -->
+    <!-- ✅ Correction suggérée : <title>Green Kitchen</title> -->
 </head>
 <body>
-    <h1>Bienvenue chez green kitchen</h1>
+    <h1>Bienvenue chez green kitchen</h1> <!-- ❌ "green kitchen" sans majuscules -->
+    <!-- ✅ Correction : Bienvenue chez Green Kitchen -->
+
     <nav>
         <ul>
-         <li><a href="repas">Repas</a></li>
-       <li> <a href="temoingnage">Temoingnage</a></li>
+            <li><a href="repas">Repas</a></li> <!-- ❌ Mauvais lien : il doit pointer vers un ID dans la page -->
+            <!-- ✅ Correction : <a href="#repas">Repas</a> -->
+
+            <li><a href="temoingnage">Temoingnage</a></li> <!-- ❌ Fautes : "temoingnage" et lien non fonctionnel -->
+            <!-- ✅ Correction : <a href="#temoignage">Témoignage</a> -->
         </ul>
-     </nav>
+    </nav>
 
+    <h2> nos Repas ecologique</h2> <!-- ❌ Majuscules manquantes, "ecologique" sans accent -->
+    <!-- ✅ Correction : Nos Repas écologiques -->
 
-    <h2> nos Repas ecologique</h2>
-    <p> decouvrez une variete de repas sains et delicieux</p>
+    <p> decouvrez une variete de repas sains et delicieux</p> <!-- ❌ Manque d'accents -->
+    <!-- ✅ Correction : Découvrez une variété de repas sains et délicieux -->
 
-    <h3>gyoza japanese</h3>
-    une delice vegetarien
+    <h3>gyoza japanese</h3> <!-- ❌ Nom de plat : mettre majuscules et traduire -->
+    <!-- ✅ Correction : Gyoza japonais -->
+
+    une delice vegetarien <!-- ❌ Article faux : "une" + "végétarien" = accord incorrect -->
+    <!-- ✅ Correction : Un délice végétarien -->
+
     <img src=" https://image.noelshack.com/fichiers/2025/31/1/1753724213-meal-1-jpg.jpeg"alt="img">
+    <!-- ❌ Espace après src=" " + alt trop vague -->
+    <!-- ✅ Correction : Supprimer espace et écrire alt="Gyoza japonais" -->
 
-    <h3> Salade d'avocat</h3>
-    <p> Rafraichissante et nutritive</p>
+    <h3> Salade d'avocat</h3> <!-- ✅ Correct -->
+
+    <p> Rafraichissante et nutritive</p> <!-- ❌ Accent manquant à "Rafraîchissante" -->
+    <!-- ✅ Correction : Rafraîchissante et nutritive -->
+
     <img src=" https://image.noelshack.com/fichiers/2025/31/1/1753724217-meal-2-jpg.jpeg " alt="photo de la Salade">
-     
-    <h2 ph="temoingnage"> Temoingnage de clients</h2>
+    <!-- ❌ Espaces inutiles dans le src + alt imprécis -->
+    <!-- ✅ Correction : Supprimer espaces et écrire alt="Salade d'avocat" -->
+
+    <h2 ph="temoingnage"> Temoingnage de clients</h2> <!-- ❌ Attribut "ph" inexistant, faute d'orthographe -->
+    <!-- ✅ Correction : <h2 id="temoignage">Témoignage de clients</h2> -->
+
     <img src="https://image.noelshack.com/fichiers/2025/31/1/1753724106-customer-1-jpg.jpeg
- "alt="photo client">
-    <p>"un service exceptionnel et des repas delicieux"-</p>
-    <p>ab._.informatique</p>
-     
-    <p>@green kitchen tous droits reserves</p>
+"alt="photo client"> <!-- ❌ Alt imprécis + retour à la ligne dans le src -->
+    <!-- ✅ Correction : alt="Photo d'une cliente" + mettre l'URL sur une seule ligne -->
+
+    <p>"un service exceptionnel et des repas delicieux"-</p> <!-- ❌ Pas de majuscule ni d'accent -->
+    <!-- ✅ Correction : "Un service exceptionnel et des repas délicieux" -->
+
+    <p>ab._.informatique</p> <!-- ✅ OK -->
+
+    <p>@green kitchen tous droits reserves</p> <!-- ❌ Manque de majuscules et accents -->
+    <!-- ✅ Correction : © Green Kitchen - Tous droits réservés -->
 </body>
 </html>
